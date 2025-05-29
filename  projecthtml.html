@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Shopping Cart</h1>
+
+    <div class="products">
+      <h2>Products</h2>
+
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Apple">
+        <div>
+          <span>Apple - $2</span>
+          <button onclick="addToCart('Apple', 2)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Banana">
+        <div>
+          <span>Banana - $1</span>
+          <button onclick="addToCart('Banana', 1)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/590/590703.png" alt="Orange">
+        <div>
+          <span>Orange - $3</span>
+          <button onclick="addToCart('Orange', 3)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="total">Total: $<span id="total">0</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
